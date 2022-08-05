@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+//import axios
+import axios from "axios";
+
+//import icons
+import {
+  IoMdSunny,
+  IoMdRainy,
+  IoMdCloudy,
+  IoMdSnow,
+  IoMdThunderstorm,
+  IoMdSearch,
+} from "react-icons/io";
+import {
+  BsCloudHaze2Fill,
+  BsCloudDrizzleFill,
+  BsEye,
+  BsWater,
+  BsThermometer,
+  BsWind,
+} from "react-icons/bs";
+import { TbTemperatureCelsius } from "react-icons/tb";
+import { ImSpinner8 } from "react-icons/im";
+
+//API key
+const APIkey = "164190171d18ca25d91eb11ecbfea162";
+
+const App = () => {
+  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+};
 
 export default App;
